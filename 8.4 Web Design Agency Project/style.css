@@ -29,13 +29,11 @@ h1 {
 }
 
 .card {
-  display: inline-block;
   width: 45%;
 }
 
 .tile-image {
   height: 200px;
-  width: 320px;
   float: left;
   margin-right: 50px;
 }
@@ -46,11 +44,26 @@ footer {
 }
 
 @media (max-width: 680px) {
-  .tile-imag, .card {
-    float: none;
+  .logo {
+    width: 100px;
   }
 
-  p {
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .card {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
     text-align: justify;
+  }
+
+  .tile-image {
+    margin-bottom: 10px;
+    display: inline;
+    width: 100%;
+    object-fit: cover;
   }
 }
