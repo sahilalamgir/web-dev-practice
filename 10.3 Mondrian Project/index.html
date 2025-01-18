@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    .flex-container {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .grid-container {
+      display: grid;
+      grid-template-rows: 500px 150px 200px 50px;
+      grid-template-columns: 500px 300px 220px 80px;
+      gap: 10px;
+      background-color: #000;
+    }
+
+    .red-tile {
+      background-color: #E72F24;
+    }
+
+    .top-right, .middle-left, .middle-tile, .bottom-right, .bottom-left {
+      background-color: #F0F1EC;
+    }
+
+    .top-right {
+      grid-column: span 3;
+    }
+
+    .middle-left, .middle-tile, .bottom-right {
+      grid-row: span 2;
+    }
+
+    .middle-tile {
+      grid-column: span 2;
+    }
+
+    .blue-tile {
+      background-color: #004592;
+      border-bottom: 10px solid #000;
+    }
+
+    .yellow-tile {
+      background-color: #F9D01E;
+    }
+
+    .black-tile {
+      background-color: #232629;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+   <div class="flex-container">
+    <div class="grid-container">
+      <div class="red-tile"></div>
+      <div class="top-right"></div>
+      <div class="middle-left"></div>
+      <div class="middle-tile"></div>
+      <div class="blue-tile"></div>
+      <div class="bottom-right"></div>
+      <div class="bottom-left"></div>
+      <div class="yellow-tile"></div>
+      <div class="black-tile"></div>
+     </div>
+   </div>
+   
+</body>
+
+</html>
